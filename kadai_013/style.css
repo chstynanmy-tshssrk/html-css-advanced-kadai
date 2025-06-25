@@ -60,11 +60,11 @@ PC用のスタイル
   }
 }
 
-/* スマホのレイアウト */
+/* スマホ用のスタイル*/
 @media screen and (max-width: 767px) {
   body {
     min-width: 375px;
-    margin: 0 auto 0 auto;
+    margin: 0;
   }
 
   /* ナビゲーションを非表示 */
@@ -74,8 +74,10 @@ PC用のスタイル
 
   /* ハンバーガーメニュー */
   #menu-sp {
-    float: right;
-    padding: 0;
+    display: right;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   /* スマホ用ナビゲーション */
@@ -114,24 +116,24 @@ PC用のスタイル
     display: block;
   }
 
-  #nav-sp a:link {
+  #nav-sp > a:link {
     color: #ffffff;
   }
   
-  #nav-sp a:visited {
+  #nav-sp > a:visited {
     color: #ffffff;
   }
   
-  #nav-sp a:hover {
+  #nav-sp > a:hover {
     color: #ffffff;
     text-decoration: underline;
   }
 
-  #nav-sp a:active {
+  #nav-sp > a:active {
     color: #ffffff;
   }
 
-  #nav-sp .menu {
+  #nav-sp > .menu {
     text-decoration: none;
     display: block;
     margin: 0 20px 0 20px;
